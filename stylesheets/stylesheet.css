@@ -1,11 +1,189 @@
+
+/*==============================================
+** base css
+**============================================*/
 body {
-
+    color: #fefefe;
+    max-height: 100px;
+    overflow: scroll;
+    /*font-family: Playfair Display;*/
+    font-family: Quattrocento Sans;
 }
 
-header {
-
+.base-color {
+  color: #35295c !important;
 }
 
-.container {
+.column {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
+.centered {
+  margin: 0 auto;
+}
+
+
+/*==============================================
+** header css
+**============================================*/
+#header-wrap {
+    background: #000;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#header #nav {
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+#header #nav li {
+  display: inline;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+#logo {
+  position: absolute;
+  width: 111px;
+  height: 111px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  /*http://mit.com.au/wordpress/wp-content/uploads/2013/10/ruby-on-rails-development.jpg*/
+  /*http://bit.ly/1TMtMl1*/
+  /*http://www.rubyxml.org/wp-content/uploads/2015/07/services-icons-ruby-@2x.png*/
+  background: url('http://www.rubyxml.org/wp-content/uploads/2015/07/services-icons-ruby-@2x.png') no-repeat center center;
+  background-size: contain;
+  border: 8px solid #000;
+  z-index: 1;
+}
+#nav #about-link {
+    margin-right: 50px;
+}
+#nav #work-link {
+    margin-right: 100px;
+}
+#nav #contact-link {
+    margin-left: 100px;
+}
+#nav #blog-link {
+    margin-left: 30px;
+}
+#toggle {
+  font-size: 25px;
+  color: white;
+}
+#header #nav li a {
+    text-decoration: none;
+    color: #FFF;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+a:hover {
+  color: #306393 !important;
+}
+
+#intro {
+  padding-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#intro-img {
+  max-width: 500px;
+  max-height: 350px;
+}
+#extro-img {
+  max-height: 50px;
+  width: auto;
+}
+
+#intro p {
+  max-width: 500px;
+  font-size: 18px;
+}
+
+
+/*==============================================
+** about css
+**============================================*/
+
+
+
+
+
+/*==============================================
+** work css
+**============================================*/
+
+
+/*==============================================
+** contact css
+**============================================*/
+#contact-other .mdi {
+  color: #a9bac8;
+  font-size: 50px !important;
+}
+
+
+/*==============================================
+** footer css
+**============================================*/
+
+#footer {
+  background: #000;
+  width: 100%;
+  margin-top: 70px;
+  height: 150px;
+  padding-top: 50px;
+}
+
+#footer-wrap {
+  position: relative;
+  text-align: center;
+}
+
+#footer-logo {
+    position: absolute;
+    width: 111px;
+    height: 111px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 85px;
+    border-radius: 50%;
+    /*http://mit.com.au/wordpress/wp-content/uploads/2013/10/ruby-on-rails-development.jpg*/
+    /*http://bit.ly/1TMtMl1*/
+    /*http://www.rubyxml.org/wp-content/uploads/2015/07/services-icons-ruby-@2x.png*/
+    background: url('http://www.rubyxml.org/wp-content/uploads/2015/07/services-icons-ruby-@2x.png') no-repeat center center;
+    background-size: contain;
+    border: 8px solid #000;
+    z-index: 1;
+}
+
+#name {
+  font-size: 40px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+#title {
+  font-size: 25px;
+  margin-bottom: 0px;
+  color: #306393;
 }
