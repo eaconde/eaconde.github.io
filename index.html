@@ -18,7 +18,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link href="//cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quattrocento+Sans" />
+  <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quattrocento+Sans" /> -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,300" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:800,300,700|Titan+One" rel="stylesheet">
 
   <script src="javascripts/main.js" charset="utf-8"></script>
 
@@ -26,6 +28,7 @@
 </head>
 
 <body>
+  <br>
   <div id="header-wrap">
     <div id="header" class="row">
       <a id="logo" href="/"></a>
@@ -37,9 +40,9 @@
       </div>
       <div id="nav">
         <ul>
-          <li id="about-link"><a class="scroll" href="#about">About</a></li>
-          <li id="work-link"><a class="scroll" href="#work">Work</a></li>
-          <li id="contact-link"><a class="scroll" href="#contact">Contact</a></li>
+          <li id="about-link"><a class="scroll" href="#about-hr">About</a></li>
+          <li id="work-link"><a class="scroll" href="#work-hr">Work</a></li>
+          <li id="contact-link"><a class="scroll" href="#contact-hr">Contact</a></li>
           <li id="blog-link"><a href="#" target="_blank">Blog</a></li>
         </ul>
       </div>
@@ -61,13 +64,62 @@
     </div>
     <br>
 
+    <!-- <hr> -->
+    <div id="about-hr" class="column hr-row">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="hr"></div>
+        </div>
+        <div class="col-sm-4">
+          <div class="centered hr-text-wrap">
+            <p class="hr-text base-color">
+              ABOUT ME
+            </p>
+            <p class="hr-subtext">
+              Allow me to introduce myself
+            </p>
+          </div>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="hr"></div>
+        </div>
+      </div>
+    </div>
+
+
     <div id="about" class="column">
+
       about
       <br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br>
     </div>
     <br>
+
+    <!-- <hr> -->
+    <div id="work-hr" class="column hr-row">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="hr"></div>
+        </div>
+        <div class="col-sm-4">
+          <div class="centered hr-text-wrap">
+            <p class="hr-text base-color">
+              MY WORK
+            </p>
+            <p class="hr-subtext">
+              Some of the things I did
+            </p>
+          </div>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="hr"></div>
+        </div>
+      </div>
+    </div>
+
 
     <div id="work" class="column">
       work
@@ -78,6 +130,31 @@
     </div>
     <br>
 
+    <!-- <hr> -->
+    <!-- <hr> -->
+    <div id="contact-hr" class="column hr-row">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="hr"></div>
+        </div>
+        <div class="col-sm-4">
+          <div class="centered hr-text-wrap">
+            <p class="hr-text base-color">
+              SAY HELLO!
+            </p>
+            <p class="hr-subtext">
+              Don't be shy now
+            </p>
+          </div>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="hr"></div>
+        </div>
+      </div>
+    </div>
+
+
     <div id="contact" class="column">
       <p>
         I'm currently available for freelance, collaboration, or full-time work. If you're interested in working with me, please get in touch using one of the methods below. Or feel free to just say hi. I would like that too.
@@ -85,10 +162,15 @@
 
       <div class="row">
         <div class="col-xs-6" id="contact-form">
-          <p class="blue-text medium">SAY HELLO!</p>
+          <h3 class="blue-text medium">SEND A MESSAGE</h3>
           <form action="MAILTO:condeeric@live.com" method="post" enctype="text/plain">
             <div>
-              <label for="name">Email</label>
+              <label for="name">Name</label>
+              <br />
+              <input type="text" name="name" id="name" class="form-control" />
+            </div>
+            <div>
+              <label for="email">Email</label>
               <br />
               <input type="text" name="email" id="email" placeholder="email@mail.com" class="form-control" />
             </div>
@@ -104,21 +186,23 @@
             </div>
           </form>
         </div>
-        <br>
 
         <div class="col-xs-6" id="other-contact">
+          <h3 class="blue-text medium">CALL OR MEET</h3>
           <div id="contact-address" class="">
 
             <address>
               <strong>Eric Conde</strong><br>
-              795 Folsom Ave, Suite 600<br>
-              San Francisco, CA 94107<br>
-              <abbr title="Phone">P:</abbr> (123) 456-7890
-              <a href="mailto:#">first.last@example.com</a>
+              1819B Concepcion Street, Santiago Village<br>
+              Makati City, MM 1208<br>
+              Philippines<br><br>
+              <abbr title="Phone">P:</abbr> +63 (2) 478-3347
+              <!-- need to setup personal domain? -->
+              <!-- <a href="mailto:#">condeeric@live.com</a> -->
             </address>
           </div>
           <div id="contact-other" class="">
-            <p class="">FOLLOW ME</p>
+            <h3 class="blue-text medium">OR ONLINE</h3>
 
             <a href="https://www.facebook.com/eric.conde"><i class="mdi mdi-facebook-box social"></i></a>
             <a href="https://twitter.com/condelights"><i class="mdi mdi-twitter-box social"></i></a>
@@ -131,14 +215,16 @@
     </div>
     <br>
   </div>
+  <br>
+
   <div id="footer" class="">
     <div class="centered" id="footer-wrap">
       <a id="footer-logo" href="/"></a>
       <div class="centered">
-        <p id="name">
+        <p id="footer_name">
           ERIC CONDE
         </p>
-        <p  id="title">
+        <p  id="footer_title">
           SOFTWARE ENGINEER
         </p>
       </div>
