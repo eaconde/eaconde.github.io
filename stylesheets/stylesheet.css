@@ -4,12 +4,17 @@
 **============================================*/
 body {
     color: #fefefe;
-    max-height: 100px;
+    /*max-height: 100px;*/
     overflow: scroll;
     /*font-family: Playfair Display;*/
     /*font-family: Quattrocento Sans;*/
     font-family: 'Open Sans', sans-serif;
     /*font-family: 'Titan One', cursive;*/
+    /*background: "../imgaes/grid-patterns/grid10.png";*/
+}
+#background {
+    background : #fff url("../images/noisy_grid.png"); /* no-repeat bottom left; */
+    /*background-size: 100% 100%;*/
 }
 
 .container {
@@ -24,6 +29,7 @@ body {
 .column {
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .centered {
@@ -43,6 +49,7 @@ body {
   margin: 0 auto;
   z-index: -999;
   text-align: center;
+
 }
 .hr-text {
   position: relative;
@@ -186,6 +193,11 @@ a:hover {
 ** work css
 **============================================*/
 
+.proj-img {
+  border: 10px solid #a9bac8;
+  margin: 10px;
+}
+
 
 /*==============================================
 ** contact css
@@ -203,7 +215,7 @@ a:hover {
 #footer {
   background: #000;
   width: 100%;
-  margin-top: 70px;
+  /*margin-top: 70px;*/
   height: 150px;
   padding-top: 50px;
 }
