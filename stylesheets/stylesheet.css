@@ -31,10 +31,26 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-/*
-p {
-  font-size: 17px;
-}*/
+
+/*==============================================
+** my_logo
+**============================================*/
+
+.my_logo {
+  text-align: center;
+  border-radius: 45px;
+  background: #000;
+  height: 100%;
+  border: 8px solid #337ab7;
+  font-family: 'Titan One', cursive;
+  font-size: 50px;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.my_logo:after {
+  content: 'ec';
+}
 
 
 /*==============================================
@@ -117,8 +133,6 @@ img {
   right: 0;
   margin: 0 auto;
   border-radius: 50%;
-  background: url('../images/temp_logo.png') no-repeat center center;
-  background-size: contain;
   border: 8px solid #000;
   z-index: 1;
 }
@@ -332,8 +346,6 @@ ul.rig.columns-4 li {
     margin: 0 auto;
     margin-bottom: 85px;
     border-radius: 50%;
-    background: url('../images/temp_logo.png') no-repeat center center;
-    background-size: contain;
     border: 8px solid #000;
     z-index: 1;
 }
@@ -347,5 +359,5 @@ ul.rig.columns-4 li {
 #footer_title {
   font-size: 25px;
   margin-bottom: 0px;
-  color: #337ab7; 
+  color: #337ab7;
 }
