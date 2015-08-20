@@ -46,11 +46,13 @@ body {
   font-size: 50px;
   -webkit-transform: rotate(-20deg);
   transform: rotate(-20deg);
+  text-decoration: none;
 }
 
 .my_logo:after {
   content: 'ec';
 }
+
 
 
 /*==============================================
@@ -125,6 +127,7 @@ img {
   height: auto;
 }
 #logo {
+  text-decoration: none;
   position: absolute;
   width: 111px;
   height: 111px;
@@ -337,17 +340,18 @@ ul.rig.columns-4 li {
 }
 
 #footer-logo {
-    position: absolute;
-    width: 111px;
-    height: 111px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    margin-bottom: 85px;
-    border-radius: 50%;
-    border: 8px solid #000;
-    z-index: 1;
+  text-decoration: none;
+  position: absolute;
+  width: 111px;
+  height: 111px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  margin-bottom: 85px;
+  border-radius: 50%;
+  border: 8px solid #000;
+  z-index: 1;
 }
 
 #footer_name {
