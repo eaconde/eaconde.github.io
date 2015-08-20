@@ -120,7 +120,7 @@ img {
   /*http://mit.com.au/wordpress/wp-content/uploads/2013/10/ruby-on-rails-development.jpg*/
   /*http://bit.ly/1TMtMl1*/
   /*http://www.rubyxml.org/wp-content/uploads/2015/07/services-icons-ruby-@2x.png*/
-  background: url('http://bit.ly/1WFhMWI') no-repeat center center;
+  background: url('../images/temp_logo.png') no-repeat center center;
   background-size: contain;
   border: 8px solid #000;
   z-index: 1;
