@@ -4,22 +4,17 @@
 **============================================*/
 body {
     color: #fefefe;
-    /*max-height: 100px;*/
     overflow: scroll;
-    /*font-family: Playfair Display;*/
-    /*font-family: Quattrocento Sans;*/
     font-family: 'Open Sans', sans-serif;
-    /*font-family: 'Titan One', cursive;*/
-    /*background: "../imgaes/grid-patterns/grid10.png";*/
 }
 #background {
-    background : #fff url("../images/noisy_grid.png"); /* no-repeat bottom left; */
-    /*background-size: 100% 100%;*/
+    background: #fff url("../images/noisy_grid.png");
+    background-attachment: fixed;
 }
 
 .container {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .base-color {
@@ -36,6 +31,10 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+/*
+p {
+  font-size: 17px;
+}*/
 
 
 /*==============================================
@@ -121,7 +120,7 @@ img {
   /*http://mit.com.au/wordpress/wp-content/uploads/2013/10/ruby-on-rails-development.jpg*/
   /*http://bit.ly/1TMtMl1*/
   /*http://www.rubyxml.org/wp-content/uploads/2015/07/services-icons-ruby-@2x.png*/
-  background: url('http://www.rubyxml.org/wp-content/uploads/2015/07/services-icons-ruby-@2x.png') no-repeat center center;
+  background: url('http://bit.ly/1WFhMWI') no-repeat center center;
   background-size: contain;
   border: 8px solid #000;
   z-index: 1;
@@ -184,19 +183,120 @@ a:hover {
 /*==============================================
 ** about css
 **============================================*/
+/*
+#my_pic_container {
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+  width: 50px;
+  height: 70px;
+}*/
 
 
+/*#my_pic_container {
+  float: left;
+  margin: 0 50px 50px 0;
+  -webkit-transform: rotate(-12deg);
+  transform: rotate(-12deg);
+  border: 16px solid white;
+  background : #fff url("../images/prof_pic.png");
+  background-size: contain;
+  box-shadow: 10px 25px 20px #888888;
+  width: 235px;
+  height: 215px;
+}*/
 
+#about {
+
+}
+
+
+#my_pic {
+  float: left;
+  /*margin: 30px; /* 10px 0 0;  */
+  margin: 40px 40px 40px -20px ;
+  -webkit-transform: rotate(-12deg);
+  transform: rotate(-12deg);
+  max-width: 50%;
+  height: auto;
+  border: 18px solid white;
+  box-shadow: 10px 25px 20px #888888;
+}
+
+#about p {
+  margin: 20px;
+}
 
 
 /*==============================================
 ** work css
 **============================================*/
 
-.proj-img {
-  border: 10px solid #a9bac8;
-  margin: 10px;
+
+/* work css - customer project container */
+
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
 }
+ul.rig li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+  border: 1px solid #cdcab7;
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+	width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+	width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+	width: 22.5%; /* this value + 2.5 should = 25% */
+}
+
+@media (max-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+
 
 
 /*==============================================

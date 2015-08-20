@@ -11,6 +11,9 @@ $(document).ready(function() {
     var contact = $('#contact-form');
     var other_contact = $('#other-contact');
 
+    var hr_text = $('.hr-text');
+    var hr_subtext = $('hr-subtext');
+
     if ($(window).width() <= 768) {
       console.log('MOBILE DEVICE DETECTED');
       // mobile specific styles
@@ -23,6 +26,9 @@ $(document).ready(function() {
       // custom contact
       contact.removeClass().addClass('col-xs-12');
       other_contact.removeClass().addClass('col-xs-12');
+      // hr
+      hr_text.css('font-size', '32px')
+      hr_subtext.css('font-size', '12px')
     } else {
       console.log('normal size');
       // return to normal styles
@@ -35,14 +41,33 @@ $(document).ready(function() {
       // contact
       contact.removeClass().addClass('col-xs-6');
       other_contact.removeClass().addClass('col-xs-6');
+      // hr
+      hr_text.css('font-size', '48px')
+      hr_subtext.css('font-size', '20px')
     }
+
+    var image = $('#my_pic');
+    if ($(window).width() <= 400) {
+      image.css('max-width', '100%');
+    } else {
+      image.css('max-width', '50%');
+    }
+
   });
 
   // smooth scrolling when anchor is clicked
   $('a').click(function() {
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top-150
-    }, 500);
+    var hrefVal = $.attr(this, 'href');
+    if (hrefVal === '#') {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 500);
+    } else {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top-150
+      }, 500);
+    }
+
     return false;
   });
 
