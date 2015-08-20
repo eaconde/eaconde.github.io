@@ -230,7 +230,7 @@ a:hover {
   margin: 40px 40px 40px -20px ;
   -webkit-transform: rotate(-12deg);
   transform: rotate(-12deg);
-  max-width: 50%;
+  max-width: 30%;
   height: auto;
   border: 18px solid white;
   box-shadow: 10px 25px 20px #888888;

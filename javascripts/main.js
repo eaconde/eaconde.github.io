@@ -48,9 +48,11 @@ $(document).ready(function() {
 
     var image = $('#my_pic');
     if ($(window).width() <= 400) {
-      image.css('max-width', '100%');
+      image.css('max-width', '80%').css('margin-left', '40px');
+    } else if ($(window).width() <= 768) {
+      image.css('max-width', '50%').css('margin-left', '-20px');
     } else {
-      image.css('max-width', '50%');
+      image.css('max-width', '30%').css('margin-left', '-20px');
     }
 
   });
