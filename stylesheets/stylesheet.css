@@ -118,6 +118,7 @@ body {
 ul {
   list-style-type: none;
   padding: 0px;
+  margin: 0px;
 }
 #header #nav li {
   display: inline;
@@ -161,7 +162,6 @@ img {
     line-height: 70px;
     text-transform: uppercase;
 }
-
 a:hover {
   color: #337ab7 !important; /* #306393 !important; */
 }
